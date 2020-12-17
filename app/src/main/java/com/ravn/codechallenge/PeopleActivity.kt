@@ -36,6 +36,7 @@ class PeopleActivity : AppCompatActivity() {
      lateinit var nstScrollView: NestedScrollView
      lateinit var linearPogress: LinearLayout
      lateinit var txtMessageConection: TextView
+     lateinit var pbLoading: ProgressBar
 
 
      val URL_BASE="https://swapi-graphql.netlify.app/.netlify/functions/index"
@@ -77,8 +78,10 @@ class PeopleActivity : AppCompatActivity() {
 
                     // Manejo de errores de conección
                     linearPogress.visibility = VISIBLE
+                    pbLoading.visibility= INVISIBLE
                     txtMessageConection.text= resources.getString(R.string.message_error_conection)
                     txtMessageConection.setTextColor(resources.getColor(R.color.text_emphasis))
+
 
                     return@launch
                 }
@@ -101,6 +104,7 @@ class PeopleActivity : AppCompatActivity() {
 
         // Inicializamos Views
         rvPeoples = findViewById(R.id.rvPeoples)
+        pbLoading = findViewById(R.id.pbLoadingr)
         nstScrollView = findViewById(R.id.nstScrollView)
         linearPogress = findViewById(R.id.linearProgress)
         txtMessageConection = findViewById(R.id.txtMessageConection)
@@ -119,6 +123,7 @@ class PeopleActivity : AppCompatActivity() {
             if(scrollY == child.measuredHeight-v.measuredHeight){
                 page++
                 linearPogress.visibility= VISIBLE
+                pbLoading.visibility= VISIBLE
                 txtMessageConection.text = resources.getString(R.string.message_conection)
                 txtMessageConection.setTextColor(resources.getColor(R.color.text_light))
 

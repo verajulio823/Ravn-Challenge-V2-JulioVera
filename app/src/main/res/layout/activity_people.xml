@@ -30,7 +30,10 @@
             <ProgressBar
                 android:id="@+id/pbLoadingr"
                 android:layout_width="20dp"
-                android:layout_height="20dp"/>
+                android:layout_height="20dp"
+                style="?android:attr/progressBarStyle"
+                android:indeterminateDrawable="@drawable/ic_progressbar"
+                />
             <TextView
                 android:id="@+id/txtMessageConection"
                 android:layout_width="wrap_content"

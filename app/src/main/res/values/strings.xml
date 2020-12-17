@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CodeChallenge</string>
+    <string name="message_conection">Loading</string>
+    <string name="message_error_conection">Failed to Load Data</string>
+    <string name="general_information">General Information</string>
+    <string name="vehicles">Vehicles</string>
+</resources>

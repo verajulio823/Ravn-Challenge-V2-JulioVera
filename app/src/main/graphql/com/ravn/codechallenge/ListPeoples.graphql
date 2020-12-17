@@ -1,0 +1,24 @@
+query ListPeoples($size: Int! ) {
+  allPeople(first:$size ){
+    totalCount
+    people{
+      name
+      species{
+        name
+        homeworld{
+        	name
+      	}
+      }
+      eyeColor
+      hairColor
+      skinColor
+      birthYear
+      vehicleConnection{
+        vehicles{
+          name
+        }
+      }
+    }
+  }
+}
+

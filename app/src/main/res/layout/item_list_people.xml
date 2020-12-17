@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/txtNamePeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Luke Skywalker"
+                    android:textColor="@color/text_dark"
+                    android:textSize="17sp"
+                    style="@style/sfProDisplayBold"
+                    />
+                <TextView
+                    android:id="@+id/txtTypePeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_light"
+                    android:text="Human from Tatooine"
+                    android:textSize="14sp"
+                    style="@style/sfProDisplayNormal"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="359dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/ic_line"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
